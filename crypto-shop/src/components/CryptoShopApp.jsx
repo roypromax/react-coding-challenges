@@ -7,18 +7,24 @@ const CryptoShopApp = () => {
   const [cryptoItems, setCryptoItems] = useState(cryptoData);
   const [cartItems, setCartItems] = useState([]);
 
-  console.log(cartItems);
-
   const onBuy = (cryptoItem) => {
     setCartItems((prevCartItems) => {
       return [...prevCartItems, cryptoItem];
+    });
+  };
+
+  const removeCartItem = (index) => {
+    setCartItems((prevCartItems) => {
+      return prevCartItems.filter((cartItem, i) => {
+        return i !== index;
+      });
     });
   };
   return (
     <div className="cryptoShop">
       <h1 className="cryptoShopTitle">Purchase Crypto</h1>
       <CryptoList cryptoItems={cryptoItems} onBuy={onBuy} />
-      <CryptoCart cartItems={cartItems} />
+      <CryptoCart cartItems={cartItems} removeCartItem={removeCartItem} />
     </div>
   );
 };

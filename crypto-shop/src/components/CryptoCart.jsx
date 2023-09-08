@@ -1,7 +1,7 @@
 import React from "react";
 import CartItem from "./CartItem";
 
-const CryptoCart = ({ cartItems }) => {
+const CryptoCart = ({ cartItems, removeCartItem }) => {
   const totalCartValue = () => {
     let total = 0;
     cartItems.forEach((item) => {
@@ -19,7 +19,14 @@ const CryptoCart = ({ cartItems }) => {
           <h2 className="cartSummary">Total Cart Value: ${totalCartValue()}</h2>
           <div className="cartItems">
             {cartItems.map((cartItem, index) => {
-              return <CartItem key={index} cartItem={cartItem} />;
+              return (
+                <CartItem
+                  key={index}
+                  cartItem={cartItem}
+                  removeCartItem={removeCartItem}
+                  index={index}
+                />
+              );
             })}
           </div>
         </>
