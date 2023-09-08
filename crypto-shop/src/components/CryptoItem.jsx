@@ -32,11 +32,10 @@ const CryptoItem = ({ crypto, onBuy }) => {
             type="number"
             value={quantity}
             onChange={(e) => setQuantity(+e.target.value)}
-            placeholder="Enter Quantity"
           />
         </div>
       )}
-      {error && <div>Please enter a quantity</div>}
+      {error && <div className="quantityError">Please enter a quantity</div>}
     </div>
   );
 };

@@ -16,7 +16,7 @@ const CryptoShopApp = () => {
   };
   return (
     <div className="cryptoShop">
-      <h1>Purchase Crypto</h1>
+      <h1 className="cryptoShopTitle">Purchase Crypto</h1>
       <CryptoList cryptoItems={cryptoItems} onBuy={onBuy} />
       <CryptoCart cartItems={cartItems} />
     </div>

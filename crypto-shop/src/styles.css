@@ -1,0 +1,125 @@
+.cryptoShop {
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cryptoShopTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cryptoList {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cryptoItem {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+  min-width: 250px;
+}
+
+.cryptoItem .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.cryptoItem button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cryptoItem button:hover {
+  background-color: #0056b3;
+}
+
+.quantityInput {
+  text-align: center;
+  margin: 10px;
+}
+
+.quantityInput label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin: 5px;
+}
+
+.quantityInput input {
+  width: 20%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.quantityError {
+  color: red;
+}
+
+.cryptoCart {
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cartTitle {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.emptyCartMessage,
+.cartSummary {
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cartItems {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  width: 75%;
+  margin: auto;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.cartItem h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.cartItem p {
+  font-size: 16px;
+  color: #777;
+}
+
+.cartItem h3 {
+  font-size: 18px;
+  color: #333;
+}

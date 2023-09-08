@@ -11,14 +11,12 @@ const CryptoCart = ({ cartItems }) => {
   };
   return (
     <div>
-      <h1>Your Cart</h1>
+      <h1 className="cartTitle">Your Cart</h1>
       {cartItems.length === 0 ? (
-        <h2>Your cart is empty!</h2>
+        <h2 className="emptyCartMessage">Your cart is empty!</h2>
       ) : (
         <>
-          <div className="cartSummary">
-            Total Cart Value: ${totalCartValue()}
-          </div>
+          <h2 className="cartSummary">Total Cart Value: ${totalCartValue()}</h2>
           <div className="cartItems">
             {cartItems.map((cartItem, index) => {
               return <CartItem key={index} cartItem={cartItem} />;
