@@ -21,9 +21,9 @@ const TodoApp = () => {
   };
 
   return (
-    <div>
+    <div className="todoApp">
       <h1>Todo List</h1>
-      <div className="todoInput">
+      <div>
         <TodoItem addTask={addTask} />
       </div>
       <div className="todoList">

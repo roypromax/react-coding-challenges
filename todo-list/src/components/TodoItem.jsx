@@ -16,16 +16,18 @@ const TodoItem = ({ addTask }) => {
   };
 
   return (
-    <div>
-      <input
-        value={todo}
-        onChange={(e) => setTodo(e.target.value)}
-        type="text"
-        placeholder="Enter Task"
-      />
-      <button onClick={() => addTodo(todo)}>Add</button>
+    <>
+      <div className="todoInput">
+        <input
+          value={todo}
+          onChange={(e) => setTodo(e.target.value)}
+          type="text"
+          placeholder="Enter Task"
+        />
+        <button onClick={() => addTodo(todo)}>Add</button>
+      </div>
       {error && <div className="todoError">{error}</div>}
-    </div>
+    </>
   );
 };
 
